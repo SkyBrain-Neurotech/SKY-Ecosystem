@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SkyBrain Neural Interface Design System - Enhanced Multi-Theme System */
+
+@layer base {
+  :root {
+    /* Enhanced Light Theme - Clean Professional */
+    --background: 210 20% 98%;
+    --foreground: 230 35% 7%;
+    --card: 210 25% 97%;
+    --card-foreground: 230 35% 7%;
+    --popover: 210 25% 97%;
+    --popover-foreground: 230 35% 7%;
+    --primary: 210 90% 55%;
+    --primary-foreground: 210 25% 97%;
+    --secondary: 200 85% 60%;
+    --secondary-foreground: 230 35% 7%;
+    --muted: 210 20% 90%;
+    --muted-foreground: 215 25% 35%;
+    --accent: 160 80% 55%;
+    --accent-foreground: 230 35% 7%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 25% 97%;
+    --border: 214 30% 85%;
+    --input: 214 30% 91%;
+    --ring: 210 90% 55%;
+    --radius: 0.75rem;
+
+    /* Light theme specific states */
+    --optimal: 140 70% 45%;
+    --moderate: 35 80% 50%;
+    --below-baseline: 5 85% 55%;
+
+    --sidebar-background: 210 25% 97%;
+    --sidebar-foreground: 230 35% 7%;
+    --sidebar-primary: 210 90% 55%;
+    --sidebar-primary-foreground: 210 25% 97%;
+    --sidebar-accent: 210 20% 90%;
+    --sidebar-accent-foreground: 230 35% 7%;
+    --sidebar-border: 214 30% 85%;
+    --sidebar-ring: 210 90% 55%;
+  }
+
+  .dark {
+    /* Enhanced Dark Theme - Deep Purple/Blue */
+    --background: 240 15% 4%;
+    --foreground: 210 30% 95%;
+    --card: 240 20% 8%;
+    --card-foreground: 210 30% 95%;
+    --popover: 240 20% 8%;
+    --popover-foreground: 210 30% 95%;
+    --primary: 255 85% 70%;
+    --primary-foreground: 240 15% 4%;
+    --secondary: 270 70% 65%;
+    --secondary-foreground: 240 15% 4%;
+    --muted: 240 15% 12%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 200 90% 65%;
+    --accent-foreground: 240 15% 4%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 30% 95%;
+    --border: 240 25% 15%;
+    --input: 240 20% 12%;
+    --ring: 255 85% 70%;
+
+    /* Dark theme specific states */
+    --optimal: 150 80% 60%;
+    --moderate: 45 90% 65%;
+    --below-baseline: 10 85% 65%;
+
+    --sidebar-background: 240 20% 8%;
+    --sidebar-foreground: 210 30% 95%;
+    --sidebar-primary: 255 85% 70%;
+    --sidebar-primary-foreground: 240 15% 4%;
+    --sidebar-accent: 240 15% 12%;
+    --sidebar-accent-foreground: 210 30% 95%;
+    --sidebar-border: 240 25% 15%;
+    --sidebar-ring: 255 85% 70%;
+  }
+
+  .scifi {
+    /* Enhanced Sci-Fi Neural Theme - Cyberpunk aesthetic */
+    --background: 240 100% 1%;
+    --foreground: 180 100% 95%;
+
+    --card: 240 50% 3%;
+    --card-foreground: 180 100% 95%;
+
+    --popover: 240 50% 3%;
+    --popover-foreground: 180 100% 95%;
+
+    /* Neon cyan primary */
+    --primary: 180 100% 50%;
+    --primary-foreground: 240 100% 1%;
+    --primary-glow: 180 100% 60%;
+
+    /* Electric magenta secondary */
+    --secondary: 300 100% 60%;
+    --secondary-foreground: 240 100% 1%;
+
+    --muted: 240 30% 8%;
+    --muted-foreground: 180 60% 70%;
+
+    /* Neon yellow accent */
+    --accent: 60 100% 50%;
+    --accent-foreground: 240 100% 1%;
+
+    /* Neural state indicators */
+    --optimal: 120 100% 50%;
+    --optimal-foreground: 240 100% 1%;
+    --moderate: 45 100% 50%;
+    --moderate-foreground: 240 100% 1%;
+    --below-baseline: 0 100% 60%;
+    --below-baseline-foreground: 180 100% 95%;
+
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 180 100% 95%;
+
+    --border: 180 50% 20%;
+    --input: 240 30% 8%;
+    --ring: 180 100% 50%;
+
+    /* Enhanced neural colors */
+    --neural-primary: 180 100% 50%;
+    --neural-secondary: 300 100% 60%;
+    --neural-alpha: 160 100% 45%;
+    --neural-theta: 280 100% 55%;
+    --neural-beta: 45 100% 55%;
+    --neural-gamma: 320 100% 55%;
+    --hrv-color: 120 100% 50%;
+
+    /* Cyberpunk gradients */
+    --gradient-neural: linear-gradient(135deg, hsl(180 100% 50%), hsl(300 100% 60%));
+    --gradient-brainwave: linear-gradient(90deg, hsl(160 100% 45%), hsl(280 100% 55%));
+    --gradient-optimal: linear-gradient(135deg, hsl(120 100% 50%), hsl(160 100% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(300 100% 60%), hsl(60 100% 50%));
+    --gradient-background: radial-gradient(ellipse at center, hsl(240 50% 3%), hsl(240 100% 1%));
+    
+    /* Intense neon glows */
+    --shadow-neural: 0 0 30px hsl(180 100% 50% / 0.8), 0 0 60px hsl(180 100% 50% / 0.4);
+    --shadow-elevated: 0 0 20px hsl(180 100% 50% / 0.6), 0 8px 32px hsl(180 100% 50% / 0.3);
+    --shadow-subtle: 0 0 15px hsl(180 100% 50% / 0.4);
+    --shadow-glow: 0 0 40px hsl(180 100% 50% / 0.9), inset 0 0 20px hsl(180 100% 50% / 0.2);
+
+    /* Smooth cyberpunk animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-neural: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    --sidebar-background: 240 50% 3%;
+    --sidebar-foreground: 180 100% 95%;
+    --sidebar-primary: 180 100% 50%;
+    --sidebar-primary-foreground: 240 100% 1%;
+    --sidebar-accent: 240 30% 8%;
+    --sidebar-accent-foreground: 180 100% 95%;
+    --sidebar-border: 180 50% 20%;
+    --sidebar-ring: 180 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .scifi body {
+    background: var(--gradient-background);
+    min-height: 100vh;
+  }
+
+  .dark body {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(240 15% 6%) 100%);
+    min-height: 100vh;
+  }
+
+  body {
+    background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(210 25% 96%) 100%);
+    min-height: 100vh;
+  }
+}
