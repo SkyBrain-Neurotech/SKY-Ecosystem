@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --port 3001",
-    "build": "npx vite build",
-    "build:local": "vite build",
+    "build": "vite build",
+    "build:alt": "npx vite build",
     "build:tsc": "tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint src --ext .ts,.tsx --fix",
